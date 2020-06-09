@@ -13,12 +13,9 @@
     <%= f.text_field :last_name, autocomplete: "last-name" %>
   </div>
 
-  <div class="field">
-    <%= form_for Child.new, url: children_path, method: :post do |c| %><br />
-      <%= c.text_field :first_name, required: true, placeholder: "Child name" %>
-      <%= c.text_field :dob, required: true, placeholder: "Date of birth" %>
-    <% end %>
-  </div>
+  <%= f.fields_for :children do |c| %>
+    <fieldset>
+  <% end %>
 
   <div class="field">
     <%= f.label :email %><br />
