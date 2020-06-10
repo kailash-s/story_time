@@ -1,7 +1,17 @@
 <ul>
   <% @users.each do |user| %>
+ <% if !user.admin %>
+    <h3>Parent</h3>
     <li><%= user.first_name %></li>
     <li><%= user.last_name %></li>
+    <h3>Children</h3>
+    <li><% user.children.each do |child| %>
+        <%= child.first_name %></li>
+    <% end %>
+    <h3>Email</h3>
     <li><%= user.email %></li><br />
+    <% end %>
   <% end %>
+
+  
 </ul>
