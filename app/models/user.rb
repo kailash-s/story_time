@@ -3,8 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-
-  # attr_accessible :children_attributes        
-  has_many :children
-  # accepts_nested_attributes_for :children
+      
+  has_many :children, dependent: :destroy
+  accepts_nested_attributes_for :children, allow_destroy: true, reject_if: :all_blank
 end

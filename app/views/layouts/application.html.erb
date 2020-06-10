@@ -20,15 +20,8 @@
 
   <body>
 
-    <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
-
     <ul id="navigation">
-      <li class="nav-logo"><img style="width:60px; height:60px; margin-right:130px;" src="images/family.png"></li>
+      <li class="nav-logo"><img style="width:60px; height:60px; margin-right:130px;" src="../../assets/images/family.png"></li>
       <li class="nav-item">Program</li>
       <li class="nav-item">Educator</li>
       <li class="nav-item">Contact</li>
@@ -44,6 +37,13 @@
       <% end %>
       </p>
     </ul>
+
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
 
     <%= yield %>
   </body>

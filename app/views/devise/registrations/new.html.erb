@@ -13,9 +13,14 @@
     <%= f.text_field :last_name, autocomplete: "last-name" %>
   </div>
 
-  <%= f.fields_for :children do |c| %>
-    <fieldset>
-  <% end %>
+  <div class="field">
+    <%= f.fields_for :children do |c| %>
+      <%= c.label :first_name %><br />
+      <%= c.text_field :first_name %>
+      <%= c.label :dob %><br />
+      <%= c.text_field :dob %>
+    <% end %>
+  </div>
 
   <div class="field">
     <%= f.label :email %><br />
