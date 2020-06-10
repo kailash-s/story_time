@@ -13,3 +13,147 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+    margin: 0;
+    padding: 0;
+    background-color: #6964be;
+    font-family: Lato, sans-serif;
+}
+
+.container {
+    width: 98vw;
+    height: 98vh;
+    justify-content: center;
+}
+
+#navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+}
+
+.cv {
+    justify-content: center;
+    padding: 10% 10%;
+}
+
+.center-align {
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 30px 70px;
+    list-style-type: none;
+}
+
+.nav-logo {
+    list-style-type: none;
+}
+
+.header {
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+}
+
+#icon {
+    padding: 20px 50px;
+}
+
+#heading {
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px 30px 20px;
+    font-size: 25px;
+}
+
+.placeholder {
+    width: 40%;
+    padding: 0 20px;
+}
+
+.contact {
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.text-section {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    margin: -5px 10px;
+    width: 75px;
+}
+
+.paragraph {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+    padding: 20px 60px;
+}
+
+.paragraph-left {
+    color: #fff;
+    font-size: 15px;
+    text-align: left;
+    line-height: 35px;
+}
+
+.nav-header {
+    color: #fff;
+    font-size: 20px;
+}
+
+.projects {
+    display: flex;
+    padding: 20% 10% 10px 10%;
+}
+
+.sub-header {
+    font-size: 15px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.title-sub-header {
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.job-description {
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.icon-position {
+    color: #fff;
+    font-size: 60px;
+    padding: 0 20px 50px 20px;
+    text-align: center;
+}
+
+#icon {
+    color: #fff;
+    font-size: 60px;
+}
+
+@media only screen and (max-width:750px) {}
