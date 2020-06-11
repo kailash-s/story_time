@@ -17,7 +17,6 @@
  * {
     margin: 0;
     padding: 0;
-    background-color: #6964be;
     font-family: Lato, sans-serif;
 }
 
@@ -30,7 +29,7 @@
 #navigation {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    background-color: #6964be;
 }
 
 .intro {
@@ -57,11 +56,14 @@
 }
 
 .nav-logo {
+    width:100%;
+    height:auto;
     list-style-type: none;
+    margin-right: 130px;
 }
 
 .header {
-    color: #fff;
+    color: orangered;
     text-align: center;
     font-size: 60px;
 }
@@ -71,7 +73,7 @@
 }
 
 #heading {
-    color: #fff;
+    color: orangered;
     justify-content: center;
     text-align: center;
     padding: 60px 20px 30px 20px;
@@ -84,7 +86,7 @@
 }
 
 .contact {
-    color: #fff;
+    color: black;
     justify-content: center;
     text-align: center;
     padding: 25px 0;
@@ -101,7 +103,7 @@
 }
 
 .paragraph {
-    color: #fff;
+    color: black;
     font-size: 16px;
     text-align: center;
     line-height: 35px;
@@ -109,7 +111,7 @@
 }
 
 .paragraph-left {
-    color: #fff;
+    color: black;
     font-size: 15px;
     text-align: left;
     line-height: 35px;
@@ -122,18 +124,23 @@
 
 .projects {
     display: flex;
-    padding: 20% 10% 10px 10%;
+    padding: 15% 10% 10px 10%;
+}
+
+.educator {
+    display: flex;
+    padding: 2% 10% 15% 10%;
 }
 
 .sub-header {
     font-size: 15px;
-    color: #fff;
+    color: black;
     opacity: 0.5;
 }
 
 .title-sub-header {
     font-size: 15px;
-    color: #fff;
+    color: black;
     display: flex;
     justify-content: center;
     padding-top: 20px;
@@ -145,14 +152,14 @@
 }
 
 .icon-position {
-    color: #fff;
+    color: orangered;
     font-size: 60px;
     padding: 0 20px 50px 20px;
     text-align: center;
 }
 
 #icon {
-    color: #fff;
+    color: orangered;
     font-size: 60px;
 }
 
