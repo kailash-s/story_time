@@ -110,6 +110,14 @@
     padding: 20px 60px;
 }
 
+.faq-paragraph {
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    line-height: 35px;
+    padding: 20px 60px;
+}
+
 .paragraph-left {
     color: black;
     font-size: 15px;
@@ -130,6 +138,11 @@
 .educator {
     display: flex;
     padding: 2% 10% 15% 10%;
+}
+
+.breakdown {
+    justify-content: center;
+    padding: 4% 10%;
 }
 
 .sub-header {
