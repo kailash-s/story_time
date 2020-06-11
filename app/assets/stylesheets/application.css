@@ -88,6 +88,14 @@
     font-size: 25px;
 }
 
+#program-heading {
+    color: #ff9500;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px 30px 20px;
+    font-size: 25px;
+}
+
 .placeholder {
     width: 40%;
     padding: 0 20px;
@@ -123,7 +131,7 @@
     font-size: 16px;
     text-align: left;
     line-height: 35px;
-    padding: 20px 60px;
+    padding: -1px 60px;
 }
 
 .paragraph-left {

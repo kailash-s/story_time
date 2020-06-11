@@ -2,11 +2,10 @@
   <% @users.each do |user| %>
  <% if !user.admin %>
     <h3>Parent</h3>
-    <li><%= user.first_name %></li>
-    <li><%= user.last_name %></li>
+    <%= user.first_name.capitalize %> <%= user.last_name.capitalize %>
     <h3>Children</h3>
     <li><% user.children.each do |child| %>
-        <%= child.first_name %></li>
+        <%= child.first_name.capitalize %></li>
     <% end %>
     <h3>Email</h3>
     <li><%= user.email %></li><br />
