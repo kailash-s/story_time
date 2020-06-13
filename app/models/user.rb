@@ -6,4 +6,6 @@ class User < ApplicationRecord
       
   has_many :children, dependent: :destroy
   accepts_nested_attributes_for :children, allow_destroy: true, reject_if: :all_blank
+
+  # validates :email, :presence => true, :email => true
 end
