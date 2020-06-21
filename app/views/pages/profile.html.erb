@@ -1,0 +1,16 @@
+<main class="container">
+    <div class="user-info">
+        <h1 class="header">Profile</h1>
+    </div>
+    <div>
+        <h2>Name:</h2>
+        <h3><%= current_user.first_name.capitalize %> <%= current_user.last_name.capitalize %></h3><br>
+        <h2>Email:</h2>
+        <h3><%= current_user.email %><h3><br>
+        <h2>Enrolled Children:</h2>
+        <% current_user.children.each do |child| %>
+        <h3><%= child.first_name.capitalize %></h3>
+        <% end %>
+    </div><br>
+    <%= link_to 'Edit profile', edit_user_registration_path %>
+</main>

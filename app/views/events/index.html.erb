@@ -1,0 +1,13 @@
+<h1>Upcoming Programs</h1><br><br>
+
+<ul>
+    <% @events.each do |event| %>
+        <li><%= event.title %></li>
+        <li><%= event.details %></li>
+        <%= form_for Participation.new do |f| %>
+        <% f.label :event_id %>
+        <% f.text_field :event_id, :value => "event.id" %>
+        <%= f.submit "RSVP" %><br>
+        <% end %>
+    <% end %>
+</ul>
