@@ -2,7 +2,7 @@ class ChildrenController < ApplicationController
 
     def new
         @child = Child.new
-      end
+    end
 
     def create
         @child = Child.new(child_params)
@@ -14,7 +14,7 @@ class ChildrenController < ApplicationController
     private
 
     def child_params
-        params.require(:child).permit(:first_name, :dob, :user_id)
+        params.require(:child).permit(:first_name, :age, :user_id)
     end
 
 end
