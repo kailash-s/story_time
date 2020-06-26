@@ -8,7 +8,7 @@ class ChildrenController < ApplicationController
         @child = Child.new(child_params)
         @child.user_id = current_user.id
         @child.save
-        redirect_to thanks_path
+        redirect_to profile_path
     end
 
     private

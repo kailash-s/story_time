@@ -1,7 +1,9 @@
+<p>Please enter your child's details below:</p><br />
+
 <%= form_for(@child) do |f| %>
     <%= f.label :first_name %><br />
     <%= f.text_field :first_name %><br />
     <%= f.label :age, 'Age' %><br />
-    <%= f.text_field :age %><br />
-    <%= f.submit %>
+    <%= f.text_field :age %><br /><br />
+    <%= f.submit 'Enroll Child' %>
   <% end %>
