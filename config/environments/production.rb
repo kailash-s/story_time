@@ -97,7 +97,7 @@ Rails.application.configure do
     :address => "smtp.gmail.com",
     :port => 587,
     :domain => "lilypadtales.herokuapp.com",
-    :authentication => :login,
+    :authentication => :plain,
     :user_name => "lilypadtales@gmail.com",
     :password => ENV['EMAIL_PASSWORD']
   }
