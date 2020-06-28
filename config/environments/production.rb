@@ -94,7 +94,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     :enable_starttls_auto => true,
     :address => "smtp.gmail.com",
-    :port => 25,
+    :port => 587,
     :domain => "heroku.com",
     :authentication => :login,
     :user_name => "lilypadtales@gmail.com",
