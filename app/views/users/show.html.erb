@@ -1,14 +1,23 @@
+<table>
+  <tr>
+    <th>Parent</th>
+    <th>Email</th>
+    <th>Children</th>
+    <th>Age</th>
+  </tr>
+</table>
+
 <ul>
   <% @users.each do |user| %>
- <% if !user.admin %>
-    <h3>Parent</h3>
-    <%= user.first_name.capitalize %> <%= user.last_name.capitalize %>
-    <h3>Children</h3>
-    <% user.children.each do |child| %>
-        <%= child.first_name.capitalize %> <%= child.age %>
-    <% end %>
-    <h3>Email</h3>
-    <li><%= user.email %></li><br />
-    <% end %>
+    <% if !user.admin %>
+      <h3>Parent</h3>
+      <%= user.first_name.capitalize %> <%= user.last_name.capitalize %>
+      <h3>Children</h3>
+      <% user.children.each do |child| %>
+          <%= child.first_name.capitalize %> <%= child.age %>
+      <% end %>
+      <h3>Email</h3>
+      <li><%= user.email %></li><br />
+      <% end %>
   <% end %>
 </ul>

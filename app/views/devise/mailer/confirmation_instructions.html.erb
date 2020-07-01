@@ -1,6 +1,6 @@
 <p>Welcome <%= @user.first_name.capitalize %>!</p>
 
-<p>Thank you for signing up to Lily Pad Tales!</p>
+<p>Thank you for signing up to LilyPad Tales!</p>
 
 <p>Please click on the link below to confirm your account:</p>
 <p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
