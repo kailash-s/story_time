@@ -42,3 +42,9 @@ yarn-debug.log*
 
 # Ignore .env file containing credentials.
 .env*
+
+# Ignore .csr file containing credentials.
+.csr*
+
+# Ignore .key file containing credentials.
+.key*
