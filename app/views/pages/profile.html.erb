@@ -11,7 +11,11 @@
         <% current_user.children.each do |child| %>
         <h3><%= child.first_name.capitalize %></h3>
         <% end %>
-        <%= link_to 'Add another child', new_child_path %>
+        <%= if current_user.child.exists? %>
+            <%= link_to 'Add another child', new_child_path %>
+        <%= else %>
+            <%= link_to 'Add child', new_child_path %>
+        <%= end %>
     </div><br>
     <%= link_to 'Edit profile', edit_user_registration_path %>
 </main>
