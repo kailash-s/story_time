@@ -11,7 +11,7 @@
         <% current_user.children.each do |child| %>
         <h3><%= child.first_name.capitalize %></h3>
         <% end %>
-        <%= if current_user.children.exists? %>
+        <%= if current_user.children.present? %>
             <%= link_to 'Add another child', new_child_path %>
         <%= else %>
             <%= link_to 'Add child', new_child_path %>
