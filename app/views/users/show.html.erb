@@ -5,8 +5,7 @@
     <%= user.first_name.capitalize %> <%= user.last_name.capitalize %>
     <h3>Children</h3>
     <% user.children.each do |child| %>
-        <%= child.first_name.capitalize %>
-        <%= child.age %>
+        <%= child.first_name.capitalize %> <%= child.age %>
     <% end %>
     <h3>Email</h3>
     <li><%= user.email %></li><br />
