@@ -52,7 +52,7 @@
 
 .cv {
     justify-content: center;
-    padding: 10% 10%;
+    padding: 10% 2%;
 }
 
 .center-align {
@@ -141,7 +141,7 @@
 }
 
 .vidhya-pic {
-    width: 24%;
+    width: 27%;
     padding: 0px 20px;
 }
 
@@ -199,12 +199,12 @@
 
 .projects {
     display: flex;
-    padding: 15% 10% 10px 10%;
+    padding: 15% 0% 10px 0%;
 }
 
 .educator {
     display: flex;
-    padding: 2% 15% 15% 15%;
+    padding: 2% 5% 15% 5%;
 }
 
 .breakdown {
