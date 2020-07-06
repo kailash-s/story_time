@@ -21,6 +21,11 @@
     position: relative;
 }
 
+.container-fluid {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+
 .background::before {
     content: "";
     background-image: url("lilypad.jpg");
