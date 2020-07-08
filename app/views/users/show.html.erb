@@ -11,7 +11,8 @@
         <td><%= user.first_name.capitalize %> <%= user.last_name.capitalize %></td>
         <td><%= user.email %></td>
         <% user.children.each do |child| %>
-          <td><%= child.first_name.capitalize %></td>
+          if user.children > 1
+          <td><%= child.first_name.capitalize %><br></td>
           <td><%= child.age %></td>
         <% end %>
       </tr>
