@@ -6,10 +6,14 @@
     <th>Age</th>
   </tr>
   <tr>
-    <td>hi</td>
-    <td>hi1</td>
-    <td>hi2</td>
-    <td>hi3</td>
+    <% @users.each do |user| %>
+      <% if !user.admin %>  
+        <td><%= user.first_name.capitalize %> <%= user.last_name.capitalize %></td>
+        <!-- <td>hi1</td>
+        <td>hi2</td>
+        <td>hi3</td> -->
+      <% end %>
+    <% end %>    
   </tr>
 </table>
 
@@ -24,6 +28,6 @@
       <% end %>
       <h3>Email</h3>
       <li><%= user.email %></li><br />
-      <% end %>
+    <% end %>
   <% end %>
 </ul>
