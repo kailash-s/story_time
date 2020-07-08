@@ -7,15 +7,14 @@
   </tr>
   <% @users.each do |user| %>
     <% if !user.admin %>
+    <% user.children.each do |child| %>
       <tr>
         <td><%= user.first_name.capitalize %> <%= user.last_name.capitalize %></td>
         <td><%= user.email %></td>
-        <% user.children.each do |child| %>
-          if user.children > 1
-          <td><%= child.first_name.capitalize %><br></td>
-          <td><%= child.age %></td>
-        <% end %>
+        <td><%= child.first_name.capitalize %></td>
+        <td><%= child.age %></td>
       </tr>
+    <% end %>
     <% end %>
   <% end %> 
 </table>
