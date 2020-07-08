@@ -254,6 +254,10 @@
     margin: 50px;
 }
 
+table, th, td {
+    border: 1px solid black;
+  }
+
 /* @media only screen and (max-width:750px) {} */
 
 @media (max-width: 960px) {
