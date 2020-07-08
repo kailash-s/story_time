@@ -10,14 +10,16 @@
       <tr>
         <td><%= user.first_name.capitalize %> <%= user.last_name.capitalize %></td>
         <td><%= user.email %></td>
-        
         <td>
           <% user.children.each do |child| %>
-          <%= child.first_name.capitalize %>
+          <%= child.first_name.capitalize %><br>
           <% end %>
         </td>
-       
-        
+        <td>
+          <% user.children.each do |child| %>
+          <%= child.age %><br>
+          <% end %>
+        </td>
       </tr>
     <% end %>
   <% end %> 
