@@ -8,7 +8,8 @@
   <% @users.each do |user| %>
     <% if !user.admin %>
       <tr>
-        <td><%= user.first_name.capitalize %> <%= user.last_name.capitalize %></td>   
+        <td><%= user.first_name.capitalize %> <%= user.last_name.capitalize %></td>
+        <td><%= user.email %></td>   
       </tr>
     <% end %>
   <% end %> 
