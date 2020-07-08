@@ -12,6 +12,7 @@
         <td><%= user.email %></td>
         <% user.children.each do |child| %>
           <td><%= child.first_name.capitalize %></td>
+          <td><%= child.age %></td>
         <% end %>
       </tr>
     <% end %>
