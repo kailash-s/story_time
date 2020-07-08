@@ -11,8 +11,13 @@
       <tr>
         <td><%= user.first_name.capitalize %> <%= user.last_name.capitalize %></td>
         <td><%= user.email %></td>
+        <% if user.children > 1 %>
+        <td><%= children.first_name.capitalize %></td>
+        <td><%= children.age %></td>
+        <% else %>
         <td><%= child.first_name.capitalize %></td>
         <td><%= child.age %></td>
+        <% end %>
       </tr>
     <% end %>
     <% end %>
