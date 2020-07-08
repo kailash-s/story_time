@@ -5,16 +5,13 @@
     <th>Children</th>
     <th>Age</th>
   </tr>
-  <tr>
-    <% @users.each do |user| %>
-      <% if !user.admin %>  
-        <td><%= user.first_name.capitalize %> <%= user.last_name.capitalize %></td>
-        <!-- <td>hi1</td>
-        <td>hi2</td>
-        <td>hi3</td> -->
-      <% end %>
-    <% end %>    
-  </tr>
+  <% @users.each do |user| %>
+    <% if !user.admin %>
+      <tr>
+        <td><%= user.first_name.capitalize %> <%= user.last_name.capitalize %></td>   
+      </tr>
+    <% end %>
+  <% end %> 
 </table>
 
 <ul>
